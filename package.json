@@ -1,0 +1,28 @@
+{
+  "name": "react-metrics",
+  "version": "0.0.1",
+  "description": "Mesure le pourcentage d'utilisation des composants, fonctions et props dans un projet React",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "metrics": "./dist/index.js"
+  },
+  "scripts": {
+    "dev": "tsc -w",
+    "link-cli": "yarn --global unlink react-metrics && yarn link --global && chmod +x dist/index.js"
+  },
+  "author": "Mathias LEROY",
+  "license": "ISC",
+  "dependencies": {
+    "@inquirer/prompts": "^5.0.2",
+    "@babel/traverse": "^7.24.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.24.1",
+    "@babel/core": "^7.24.4",
+    "@babel/parser": "^7.24.4",
+    "@babel/types": "^7.24.0",
+    "@types/node": "^20.12.7",
+    "typescript": "^5.4.5"
+  }
+}
